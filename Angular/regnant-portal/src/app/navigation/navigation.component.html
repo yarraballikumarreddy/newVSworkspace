@@ -1,0 +1,17 @@
+<div class="topnav">
+  
+    <a routerLink="/"></a>
+
+    <a routerLink ="Homedetails" routerLinkActive="active">Home</a>
+    <a routerLink ="Employeedetails" routerLinkActive="active">Employee Login</a>
+    
+    <a routerLink ="Employeelogindetails" routerLinkActive="active"> H.R Login</a>
+    <a routerLink ="Employeedetail" routerLinkActive="active">LogOut</a>
+    <a routerLink="Employeelogindetails" routerLinkActive="active" *ngIf="show" (click)="show = !show">{{show ? 'hide':'show'}}</a>
+   
+       
+
+  
+
+    
+</div>

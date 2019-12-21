@@ -1,0 +1,6 @@
+.mainbody {
+    background-image: url("../../assets/images/img-01.png");
+    /* background-image: url("../../assets/img3.jpg"); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

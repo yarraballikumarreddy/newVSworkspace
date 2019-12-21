@@ -1,0 +1,52 @@
+<html>
+    <head>
+       <meta charset="ISO-8859-1">
+       <title>dynamicform</title>
+         <script>
+                  var x=1; 
+                      function addchild()
+                        {
+                             var div=document.createElement("div");
+                             div.setAttribute("id",x);
+                             x++;
+                             div.innerHTML="Child Name:";
+                             
+                             var inputd=document.createElement("input");
+                             inputd.setAttribute("type","text");
+                             inputd.setAttribute("name","child");
+                             div.appendChild(inputd); 
+    
+                             var button=document.createElement("button");
+                             button.setAttribute("onclick","rechild()");
+                             button.innerHTML="-";
+                             div.appendChild(button);
+
+
+                             var children=document.getElementById("children");
+                             children.appendChild(div);
+                       }
+                   function rechild()
+                      {
+                            var children=document.getElementById("children");
+                            var rchild=children.children;
+                            console.log(rchild);
+                            children.removeChild(rchild);
+                            x--;
+                                                                              
+                       } 
+          </script>
+    </head>
+    <body>
+                      
+            <form id="reg">
+                 Father Name: <input type="text"><br>
+                 Mother Name: <input type="text"><br>
+                 Child Name: <input type="text" >
+
+                 <button  type ="button" name="child" onclick="addchild()">+</button><br>
+                 <div id="children">
+                 </div>
+            </form>
+              
+    </body>
+ </html>

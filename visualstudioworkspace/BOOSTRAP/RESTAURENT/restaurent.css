@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.navbar-brand {
+    font-family: 'pacifico';
+    font-size: 37px;
+    color: lightcoral !important
+}
+
+.nav-link {
+    font-size: 14px;
+    margin: 19px;
+    font-family: 'Roboto';
+    color: black !important
+}
+
+.nav-link:hover {
+    color: #00E8E8 !important;
+}
+
+:active .nav-link {
+    color: #00E8E8 !important;
+}
+
+.btn-right-menu {
+    padding: 13px 46px;
+    margin-right: 4%;
+    background-color: transparent;
+    transition: all 300ms ease-in;
+    font-size: 15px;
+}
+
+.btn-right-menu:hover {
+    color: white;
+    background-color: #00E8E8;
+}
+
+.site-content {
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("body.jpg");
+}
+
+.site-title, .site-desc {
+    color: rgb(30, 54, 54);
+    font-family: 'pacifico';
+    text-align: center;
+}
+
+.site-title {
+    margin-top: 170px;
+    margin-bottom: 30px;
+    font-size: 70px;
+}
+
+.site-desc {
+    font-size: 63px;
+    padding-left: 17px;
+}
+
+.side-btn1 {
+    margin-left: 310px;
+    background-color: bisque;
+    color: black;
+}
+
+.side-btn2 {
+    background-color: bisque;
+    color: black;
+}
+
+.side-btn1, .side-btn2 {
+    margin-top: 90px;
+    margin-bottom: 47px;
+}
+
+.footer {
+    width: 100%;
+    margin-top: 0px;
+    height: 130px;
+    background-color: rgb(36, 16, 16);
+    border: 2px solid rgb(14, 13, 12)
+}
+
+.footer-text {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 120%;
+    position: relative;
+    top: 75px;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 30px;
+}
+

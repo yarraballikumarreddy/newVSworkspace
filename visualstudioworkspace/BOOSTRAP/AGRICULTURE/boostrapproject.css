@@ -1,0 +1,103 @@
+body {
+    margin: 0 auto;
+    background-color: black;
+}
+
+.logo {
+    height: 60px;
+    float: left;
+}
+
+.name {
+    float: left;
+    margin-top: 5px;
+    color: chartreuse;
+    margin-left: 400px;
+    font-size: 30px;
+}
+
+section {
+    width: 49.4%;
+    float: left;
+}
+
+aside {
+    width: 49.5%;
+    float: right;
+}
+
+footer {
+    clear: both;
+    background-color: seagreen;
+    height: 150px;
+    width: 100%;
+    color: whitesmoke
+}
+
+.suggestions {
+    float: left
+}
+
+.social {
+    height: 100px;
+    width: 200px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 10px
+}
+
+.fb {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px
+}
+
+.twt {
+    height: 30px;
+    width: 30px;
+    border-radius: 35px;
+    margin-left: 10px
+}
+
+.mail {
+    float: left;
+    height: 50px;
+    margin-top: 10px;
+    width: 200px;
+    margin-left: 100px
+}
+
+.address {
+    margin-top: 10px;
+    float: right;
+    margin-right: 30px
+}
+
+.pest1 {
+    height: 200px;
+    float: left;
+    width: 49%
+}
+
+.pest2 {
+    height: 200px;
+    width: 49%
+}
+
+.agr2 {
+    height: 200px;
+    float: left;
+    width: 49.5%
+}
+
+.agr1 {
+    height: 200px;
+    float: left;
+    width: 49.5%
+}
+
+p {
+    color: white;
+    text-align: justify;
+    margin-top: 10px
+}

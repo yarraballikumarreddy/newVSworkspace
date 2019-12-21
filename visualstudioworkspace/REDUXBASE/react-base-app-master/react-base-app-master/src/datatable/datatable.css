@@ -1,0 +1,22 @@
+
+.tablestyle{
+    border-collapse: collapse;
+    width:100%;
+}
+
+.tableHeadBg{
+    background-color: #4CAF50;
+    color:white;
+}
+
+.tableDataPadding{
+    text-align: left;
+    padding: 8px;
+}
+
+.evenchild{
+    background-color: #f2f2f2;
+}
+.trhover{
+     box-shadow: 10px 10px 5px #888888;
+}

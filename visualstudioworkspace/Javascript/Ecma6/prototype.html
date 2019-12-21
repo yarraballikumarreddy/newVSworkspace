@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!-- object prototype// object constructor -->
+    </head>
+    <body>
+
+     <p id ="demo"> hiiii!!!
+         
+     </p>
+
+
+
+        <script>
+            function person( first,last,age,height){
+                this.firstname=first;
+                this.lastname=last;
+                this.age=age;
+                this.height=height;    
+                // We also learned that you can not add a new property to an existing object constructor:
+                        // Person.nationality = "English";
+
+                   //we use  and can  add a new property to an existing object constructor: 
+                //    this.nationality="english"    
+            }            
+            var h= new person( "kumar","reddy",24,5.78,"telugu");
+            document .getElementById("demo").innerHTML=
+            h.firstname;
+            //h.nationality;
+        </script>
+    </body>
+</html>
+
+
+
+

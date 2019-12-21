@@ -1,0 +1,128 @@
+body {
+    margin: 0 auto;
+    background-color: cornflowerblue;
+}
+
+.navbar {
+    margin-bottom: 0px !important
+}
+
+ul li {
+    padding: 9px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px
+}
+
+ul li:hover {
+    background-color: orangered
+}
+
+navbar-nav {
+    margin-right: 10px;
+}
+
+.section1 {
+    background-color: cornflowerblue;
+    width: 26.4%;
+    height: 550px;
+    float: left;
+    margin-left: 0.1%;
+}
+
+.section2 {
+    margin-left: 0.5%;
+    width: 46%;
+    height: 550px;
+    float: left;
+    background-color: cornflowerblue;
+}
+
+.carousel {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.aboutbcc {
+    font-size: 18px
+}
+
+.aside1 {
+    margin-left: 0.5%;
+    width: 26.4%;
+    height: 550px;
+    float: left;
+    background-color: cornflowerblue;
+}
+
+.panel {
+    width: 100%;
+    background-color: blue;
+    color: aliceblue;
+    text-align: center
+}
+
+.logo {
+    margin-top: -3px;
+    height: 30px;
+}
+
+p {
+    text-align: justify
+}
+
+.panel-body {
+    background-color: gold;
+}
+
+.panel:hover {
+    background-color: chartreuse;
+}
+
+.panelheading .a .h4:hover {
+    color: black
+}
+
+#mycarousel {
+    border: 2px solid red;
+    height: 100px;
+    color: red;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.icon-bar, button {
+    background-color: black
+}
+
+h5 {
+    font-size: 18px;
+    color: black;
+}
+
+.laws {
+    float: left;
+    margin-top: 10px;
+    color: black;
+    margin-left: 30px
+}
+
+.email {
+    float: left;
+    margin-top: 10px;
+    color: aliceblue;
+    margin-left: 500px
+}
+
+.contact {
+    margin-top: 15px;
+    float: right;
+    color: aliceblue;
+    margin-right: 40px
+}
+
+.laws:hover {
+    background-color: orangered
+}

@@ -1,0 +1,38 @@
+<html>
+      <head>
+              <title>Dynamic Form</title>
+              <style>
+              .a{text-align: center;padding: 300px;}
+              </style>
+      </head>
+      <body>   
+              
+
+                <div id = "box"><br>
+                        Education:<input type = "text"  >
+                          <button id ="add"> +</button>
+                        </div>   
+      </body>
+      
+      <script>
+              var btn = document.querySelector("#add");
+
+                         btn.onclick = function(){
+                      var div = document.createElement("div");
+                         div.innerHTML=generateit();
+                    
+                        document.getElementById("box").appendChild(div);
+              }
+            
+
+      function generateit(){
+                        return"<input type = 'text'><button onclick='removeit(this)'>-</button>";
+        }
+
+        function removeit(div){
+                            document.getElementById("box").removeChild(div.parentNode);
+        }
+
+      </script>
+</html>
+  

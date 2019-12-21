@@ -1,0 +1,102 @@
+
+
+<button type="button" value="Add" onclick="javascript:add(type);"> Add</button>
+
+
+<HTML>
+<HEAD>
+<TITLE>Dynamically add Textbox, Radio, Button in html Form using JavaScript</TITLE>
+<SCRIPT language="javascript">
+function add(type) {
+
+	//Create an input type dynamically.
+	var element1 = document.createElement("input");
+
+    //Assign different attributes to the element.
+    element1.setAttribute("class", type);
+	element1.setAttribute("type", type);
+	element1.setAttribute("value", type);
+	element1.setAttribute("name", type);
+
+
+	var foo = document.getElementById("fooBar");
+
+	//Append the element in page (in span).
+	foo.appendChild(element1);
+
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+<H2>Dynamically add element in form.</H2>
+Select the element and hit Add to add it in form.
+<BR/>
+<SELECT name="element">
+	<OPTION value="button">Button</OPTION>
+	<OPTION value="text">Textbox</OPTION>
+	<OPTION value="radio">Radio</OPTION>
+</SELECT>
+
+<INPUT type="button"  value="add" onclick="add(document.forms[0].element.value)"/>
+
+<div id="fooBar">&nbsp;
+   
+</div>
+
+
+
+
+
+
+<div id="reqs">
+        <h3 align="center"> Requirements </h3>
+    </div>
+     <script>
+        var reqs_id = 0;
+    
+        function removeElement(ev) {
+            var button = ev.target;
+            var field = button.previousSibling;
+            var div = button.parentElement;
+            div.removeChild(button);
+            div.removeChild(field);
+        }
+    
+        function add() {
+            reqs_id++; // increment reqs_id to get a unique ID for the new element
+    
+            //create textbox
+            var input = document.createElement('input');
+            input.type = "text";
+            input.setAttribute("class", "w3-input w3-border");
+            input.setAttribute('id', 'reqs' + reqs_id);
+            input.setAttribute('value', reqs_id);
+            var reqs = document.getElementById("reqs");
+
+            //create remove button
+            var remove = document.createElement('button');
+            remove.setAttribute('id', 'reqsr' + reqs_id);
+            remove.onclick = function(e) {
+                removeElement(e)
+            };
+            remove.setAttribute("type", "button");
+            remove.innerHTML = "Remove" + reqs_id;
+            //append elements
+
+            
+            reqs.appendChild(input);
+            reqs.appendChild(remove);
+        }
+    
+    </script> 
+
+<button type="button" value="Add" onclick="javascript:add();"> Add</button>
+
+
+
+
+
+</FORM>
+</BODY>
+</HTML>

@@ -1,0 +1,28 @@
+.rTable{
+    display:table;
+    width: 100%;
+}
+.rTableHead{
+    display:table-header-group;
+    background-color: green;
+    font-weight: bold;
+    color:white;
+    margin-bottom: 4px;
+}
+.rTableRowGroup{
+    display:table-row-group;
+}
+.rTableRow{
+    display: table-row;
+}
+.rTableCell{
+    display: table-cell;
+    padding: 5px;
+}
+.eventRowColor{
+    background-color:  #ccc;
+}
+.hoverShadow{
+    box-shadow: 6px 6px 3px gray;
+   /* box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.5);*/
+}

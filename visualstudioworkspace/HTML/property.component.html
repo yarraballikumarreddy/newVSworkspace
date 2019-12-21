@@ -1,0 +1,87 @@
+<div>
+
+<input type="text" [(ngModel)] ='name'>
+
+</div>
+<div *ngFor = 'let lst of appList'> 
+    <ul> 
+       <li>{{lst.ID}}</li> 
+       <li>{{lst.Name}}</li> 
+    </ul> 
+ </div>
+
+
+ <div>
+     <ul>
+         <li *ngFor='let c of cities'>{{c}}</li>
+     </ul>
+ </div>
+
+
+
+ <table>
+     <tr>
+         <th>Id</th>
+         <th>FirstName</th>
+         <th>LastName</th>
+     </tr>
+     <tr *ngFor="let s of student">
+         <td>{{s.id}}</td>
+         <td>{{s.firstname}}</td>
+         <td>{{s.lastname}}</td>
+     </tr>
+ </table>
+
+ <div>
+     <input type="text" [(ngModel)] ='value1'><br>
+     <input type="text" [(ngModel)] ='value1'>
+ </div>
+
+ <h2 [ngClass]="'one'">
+    Using NgClass with String.
+ </h2>
+
+ <input type="button" (click)="f1()">
+
+  <p [ngClass]="'one two'">
+    Using NgClass with String.
+    </p> 
+    
+
+    <h2 [ngClass]="['three', 'four']">
+        Using NgClass with Array.
+    </h2>
+
+      <h1 [ngClass]="{'one': true, 'three': true }">
+        Using NgClass with Object.
+      </h1>
+
+       <div *ngFor="let user of users; let flag = even;">
+        <div [ngClass]="{'one':!flag, 'two':flag, 'three':flag, 'four':flag}"> {{user}} </div>
+     </div>
+     
+     
+<br/>
+<div [ngClass]="getCSSClasses('nightMode')">
+ Using NgClass with Component Method.
+</div> 
+<div>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>FirstName</th>
+            <th>Marks</th>
+        </tr>
+        <tr *ngFor = "let s of student1 | studentdtls" >
+            <td>{{s.id}}</td>
+            <td>{{s.firstname}}</td>
+            <td>{{s.marks}}</td>
+        </tr>
+    </table>
+</div>
+
+
+
+
+
+

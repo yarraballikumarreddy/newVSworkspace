@@ -1,0 +1,79 @@
+# regnant-portal
+# Requirements.
+    1.As a HR he/she can able to do Add employee, update employee, search employee in HR Home page
+    2.As a Employee he/she can able to view profile, update time sheet,apply for leave in Employee page 
+# UseCases
+   ## 1.Home page with HR and employee selection option
+   ### 1.1 Home Header
+            Regnant home page with navigation bar contains HR Login and Employee Login selection
+   ### 1.2 Footer
+            footer contains details about company and company address etc
+   ### 1.3. About page.
+             In this section contains company previous clients details and projects details.
+   ## 2.HR Login Page
+
+   ### 2.1 Login inputs
+              HR enters Login details like userId and Password, after words servlet checks whether the given  userId and password 
+              matchs userId and password present in servletContext.
+   ### 2.2 Login UI
+             Login page need to be feel good and attractive.
+   ## 3.HR Home Page with Add employee, update employee, search employee
+   ### 3.1 Add Employee details page
+             when HR clicks on add employee option, he needs to add employee-personal-data in one page,employee-contact-data
+             in next page,employee-professional-data in next page, after filling details in every form and Click  on submission ,then that entered data Stored into the database.
+   ### 3.2 Update Employee page 
+             if any updation is required in employee details then HR need to enter EmployeeId and where data is need to be updated.  
+   ### 3.3 Search Employee servlet and jdbc
+             To view the Profile of employee, HR need to enter the Employee Id. based on Employee Id we need to get data related from   database.if HR enters wrong EmployeeId then we need show enter valid employeeId.       
+   ## 4.Employee Login Page
+   ###  4.1 Login inputs
+              Employee enters Login details like userId and Password, after words servlet checks whether the given  userId and password 
+              matchs userId and password present in servletconfig. 
+   ## 5.Employee page with view profile, time sheet,leave apply
+   ### 5.1 Employee Page with retrive data from data base
+             after login into Employee we need to display Profile of Employee. 
+   ### 5.2 Employee Page with time sheet
+   ### 5.3 Employee Page with Leave apply
+# Desing 
+
+# Tables
+
+
+1.employee-personal-tbl
+  
+| Employee ID | First Name |Last Name | Date of Birth | Gender | Marital Status  |Fathers Name| Mothers Name | Nationality| Blood Group|Mobile Phone| E-Mail |Password|
+| ----------- |:----------:| --------:|:------------: |:------:| ---------------:|----------- |:------------:| ----------:|------------|--------:|----------:|--------:|
+|  12345      | molabanti | koteswararao|07-07-1996  |Male   |Single           |             |         | Indian     |B+ Positive|9840360546|mkr@gmail.com|123223|
+|             |           |          |               |        |                |             |             |            |           |   |            |            | 
+
+2. employee-contact-tbl
+
+| Employee ID | Home Phone| Street Address| City  |State  | Country | Pincode| 
+| ----------- |:---------:| ------------- |:-----:| -----:| ------- |:------:|
+| 12345       |9840360458 |north Street   |Chirala| AP    | India   | 523170 |
+|             |           |               |       |       |         |        | 
+
+3.employee-Educational qualifications-tbl
+
+| Employee ID | Course     | Name of School/College | Board/University| Year of Passing|  Percentage or CGPA |
+| ----------- |:----------:| ----------------------:|---------------: |---------------:|--------------------:|
+| 12345       | Secondary(10th)|                    |                 | 2011           |                     |
+| 12345       | 12th         |                      |                 | 2013           |                     |
+| 12345       | B.E(MECH)  |                        |                 | 2107           |                     |
+
+4.employee-professional-tbl
+
+| Employee ID | Date of Joining  | Date of Relieving | Job Title| salary|  work experience |Next Company|
+| ----------- |:----------:| -----------------------:|--------: |------:|-----------------:|------------|
+| 12345       | 07-02-2019 |                         |          |       |                  |            |
+| 9874        | 05-03-2019 |                         |          |       |                  |            |
+| 45678       | 05-03-2019 |                         |          |       |                  |            |
+
+
+# Test Case
+
+| Test case1        | Expected Result           |  |
+| ------------- |:-------------:| -----:|
+| User login with out any data    | error message should show in header |  |
+| User entered use name wrong     |       |    |
+|                  |             |                    |

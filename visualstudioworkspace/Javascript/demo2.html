@@ -1,0 +1,75 @@
+<html>
+
+<head>
+<script type="text/javascript">
+ var i,j;
+ for(i=5; i <= 1; i++)
+ {
+  for(j=5; j<=i; j++)
+ {
+   
+   document.write('*');
+  }
+   document.write('','<br>');
+  }
+    
+</script>
+<br></br>
+
+<script type="text/javascript">
+    var i,j;
+    for(i=1; i <= 5; i++)
+    {
+     for(j=1; j<=i; j++)
+    {
+      
+      document.write('*'.repeat(i));
+       //repeat method used reapeat the j value 
+       
+      //$ also print in output,which you have print that sybal palce in ' '
+     }
+      document.write('','<br>');
+     }
+       
+   </script>
+   <br><br><br>
+<script type="text/javascript">
+    var i,j;
+    for(i=1; i <= 5; i++)
+    {
+     for(j=1; j<=i; j++)
+    {
+      
+      document.write('*'.repeat(i));
+       //repeat method used reapeat the i value 
+      //(increase repeated star ) double star eachline, 
+      //$ also print in output,which you have print that sybal palce in ' '
+     }
+      document.write('','<br>');
+     }
+       
+     function stars(n){
+    var str = '';
+    for(var i=1; i<=n; i++){
+        for(var k=1; k<=n-i; k++){
+            str += "\t";
+        }
+        for(var j=1; j<=i; j++){
+            str += "*\t\t";
+        }
+        console.log(str);
+        str = "";
+    }
+}
+stars(3);
+
+
+
+
+
+   </script>
+  
+</head>
+<body>
+</body>
+</html>

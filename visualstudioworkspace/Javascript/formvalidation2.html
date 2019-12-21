@@ -1,0 +1,65 @@
+<html>
+
+<head>
+              <script>
+
+                      function validate(){
+
+                        var User = document.getElementById("username");
+
+                        var Pass = document.getElementById("Password");
+
+                        if(User.value.trim() ==""&&Pass.value.trim()=="" ){
+
+                            User.style.borderColor="Green";
+                              Pass.style.borderColor="red";
+
+                            // alert("Please give valid Inputs");
+                              
+
+                              return false;
+
+                        }
+
+                          if(User.value=="")
+                            { User.style.borderColor="green";
+                            return false;
+                            }
+                            
+                            if(Pass.value=="")
+                            { Pass.style.borderColor="green";
+                            return false; 
+                            }
+
+
+
+                        else{
+                      
+                            true;
+                        }
+
+                      }
+
+
+              </script>
+                      
+
+</head>
+
+<body>
+
+<form onsubmit=" return validate()" >
+
+<input id ="username" placeholder="UserName" type="text" >
+
+<input id="Password" placeholder="Password" type="password">
+
+<button   type="submit">Submit</button>
+
+
+</form>
+
+</body>
+
+</html>
+

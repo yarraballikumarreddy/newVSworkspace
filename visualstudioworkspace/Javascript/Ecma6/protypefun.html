@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h3>Prototype Inheritance</h3> 
+        <!-- Adding Properties and Methods to Objects --> 
+    </head>
+    <body>
+        <p id ="hello"> </p>
+        <script>
+            // The JavaScript prototype property allows you to add new properties to object constructors:s
+        function Person(first,last,age) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+        }
+            Person.prototype.nationality ="india";
+
+            var h = new Person ( "kumar","reddy",24);
+            document.getElementById("hello").innerHTML=h.nationality;
+        </script>
+    </body>
+</html>

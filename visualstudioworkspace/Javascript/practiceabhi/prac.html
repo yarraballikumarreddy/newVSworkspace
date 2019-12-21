@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+      <title> java synatax</title>
+        
+    </head>
+    <body bgcolor="blue">
+      <input type="text" id ="table" >
+      <button onclick="gettables()">enter</button>
+      <script>
+        function gettables(){
+          var t=   document.getElementById("table").value;
+          var x =t;
+          for(i=1;i<=10;i++){
+          document.write(x+"X"+i+"="+x*i+"<br>");
+          }
+        }
+      </script> 
+   
+    
+    
+      <div>
+        enter marks:<input type ="text" id ="marks"  >
+        <button onclick="getgrade(); gettables()">find Grade
+            
+        </button>
+      <script>
+        function getgrade() 
+        {
+          var m=document.getElementById("marks").value;
+          switch(true){
+            case m >= 90:result="A grade";
+            break;
+            case m >= 75:result="B grade";
+            break;
+            case m >= 60:result="c grade";
+            break;
+            case m >=45 :result="D grade"; 
+            break;
+            case m >=36 :result ="E grade"; 
+            break;
+            default:result="fail";
+          }
+          document.write(result);
+        }
+      </script>
+      </div>
+      <div>
+        <!-- array -->
+        <script>
+          // array literal
+          var stu =["kumar","reddy","yarraballi"];
+          //array newkeyword array dirently
+          var stu =new Array();
+          stu[0]="kumarreddy";
+          stu[1]="ramesh";
+          stu[2]="suresh";
+          while(i<arr.length){
+            document.write(stu[i]);
+          }
+
+          //array by constractor
+          var stu =new Array("kumar","reddy","lokesh");
+          for(i=0;i<emp.length;i++){
+           document.write(stu[i]);
+          }
+          // objects
+          //objectliteral only one entity
+          var stu ={ rollno:116,name:"kumarreddy",branch:"cse"}
+          document.write(stu.rollno+""+stu.name+""+stu.branch);
+          //new object
+          var emo =new Object();
+          emo.id =116;
+          emo.name="tharun";
+          emo.branch="vivi";
+          document.write(emo.id+""+emo.name+""+emo.branch);
+
+          //3type object
+          function student(sno,name,address,branch){
+            this.sno=sno;
+            this.name=name;
+            this.address=address;
+            this.branch=branch;
+
+          }
+          var stu =new student(16,"kkt","jkr");
+          document.write(stu.sno+""+stu.name)
+        </script>
+      </div>
+      <div>
+        <body>
+        <script>
+          function goback(){
+            history.back();
+          }
+          function forward(){
+            history.forward();
+          }
+          </script>
+          <input type="button" onclick="goback()" value="Back">
+          <input type="button" onclick="forward()" value ="forward">
+
+        </body>
+
+      </div>
+
+     
+    </body>
+</html>

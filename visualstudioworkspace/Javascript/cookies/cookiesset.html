@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+
+</style>
+    </head>
+<body>
+        <input type ="text">
+    <script>
+    function setcookies( cname,cvalue ,exdays){
+        var d =new date();
+        d.setTime(d.gettime()+(exdays*24*60*60*1000));
+        var expires = "expires"+d.toGMTString();
+        document.cookie=cname+"=="+cvalue+"=="+expires;
+    }
+
+    function getCookie(cname){
+     var name= cname;
+     
+
+    }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

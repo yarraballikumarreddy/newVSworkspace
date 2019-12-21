@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head></head>
+    <body>
+
+<div id ="kumar">
+    Address:
+    <input type ="text " >
+    <button id="adds" onclick="addchild()">+</button>
+    <!-- or -->
+    <button id="add">+</button>
+</div>
+
+
+<script>
+
+function addchild(){
+    var div = document.createElement("div")
+    div.innerHTML=generateit();
+    document.getElementById("kumar").appendChild(div);
+}
+
+
+
+
+//  oooooooooooooorrrrrrrrrrrrabove r below
+
+
+
+
+var btn =document.querySelector("#add");
+btn.onclick =function(){
+    var div = document.createElement("div")
+    div.innerHTML=generateit();
+    document.getElementById("kumar").appendChild(div);
+
+}
+function generateit(){
+    return("aaadefdf :<input type ='text' > <button onclick ='removeit(this)'>- - -</button>");
+
+}
+function removeit(div){
+    document.getElementById("kumar").removeChild(div.parentNode);
+}
+</script>
+    </body>
+</html>

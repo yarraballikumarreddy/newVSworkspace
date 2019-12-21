@@ -1,0 +1,21 @@
+
+<div class="container" >
+    <div class="row">
+         <div class="col-md-4"></div>
+         <div class="col-md-4">
+             <form #myform="ngForm" (ngSubmit)="submitForm(myform.value)">
+                 <div class="form-group">  
+                      <label>Enter UserName</label>
+                      <input type="text" name="username" ngModel class="form-control" autocomplete="off">
+                 </div>
+                 <div class="form-group">
+                      <label>Enter Password</label>
+                      <input type="text" name="password" ngModel class="form-control" autocomplete="off">
+                 </div>
+                 <input type="submit" class="btn btn-primary btn-block" value="Submit">
+             </form> 
+         </div>
+         <div class="col-md-4"></div>
+    </div>
+</div>
+
